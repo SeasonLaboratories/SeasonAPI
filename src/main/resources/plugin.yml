@@ -1,0 +1,5 @@
+name: SeasonAPI
+version: '1.0.0'
+main: store.seasonlabs.api.SeasonAPI
+authors: [ SeasonLaboratories ]
+description: Dependência de todos os plugins da SeasonLaboratories!

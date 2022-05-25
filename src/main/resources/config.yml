@@ -1,0 +1,5 @@
+# Sons utilizados nos plugins da loja.
+sounds:
+  error: ANVIL_BREAK
+  successful: VILLAGER_YES
+  invalid: VILLAGER_NO
