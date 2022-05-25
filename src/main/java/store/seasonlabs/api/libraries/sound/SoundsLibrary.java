@@ -11,6 +11,11 @@ public class SoundsLibrary {
 
         val sound = plugin.getConfig().getString(section);
 
+        if(sound == null) {
+            player.sendMessage("§c[SeasonLabs] O som " + sound + " não existe.");
+            return;
+        }
+
         player.playSound(player.getLocation(), section, 1, 1);
     }
 
