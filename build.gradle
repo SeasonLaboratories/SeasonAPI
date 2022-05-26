@@ -19,7 +19,6 @@ dependencies {
     compileOnly fileTree('libs')
 
     implementation('com.github.SaiintBrisson.command-framework:bukkit:1.2.0')
-    implementation('com.github.HenryFabio:sql-provider:9561f20fd2')
 
     def lombok = 'org.projectlombok:lombok:1.18.24'
     compileOnly(lombok)
