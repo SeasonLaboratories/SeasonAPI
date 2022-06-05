@@ -22,7 +22,6 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.12-R0.1-SNAPSHOT'
 
     implementation('com.github.SaiintBrisson.command-framework:bukkit:1.2.0')
-    implementation ('com.github.DevNatan:inventory-framework:2.5')
     implementation 'com.github.HenryFabio:sql-provider:9561f20fd2'
 
     def lombok = 'org.projectlombok:lombok:1.18.24'
