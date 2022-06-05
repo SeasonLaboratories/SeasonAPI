@@ -10,15 +10,20 @@ version('1.0.0')
 repositories {
     mavenCentral()
 
+    maven {url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
     maven { url('https://oss.sonatype.org/content/groups/public/') }
     maven { url('https://jitpack.io/') }
+    maven { url('https://repo.lucko.me/') }
 }
 
 dependencies {
-
     compileOnly fileTree('libs')
+    compileOnly('me.lucko:helper:5.6.10')
+    compileOnly 'org.spigotmc:spigot-api:1.12-R0.1-SNAPSHOT'
 
     implementation('com.github.SaiintBrisson.command-framework:bukkit:1.2.0')
+    implementation ('com.github.DevNatan:inventory-framework:2.5')
+    implementation 'com.github.HenryFabio:sql-provider:9561f20fd2'
 
     def lombok = 'org.projectlombok:lombok:1.18.24'
     compileOnly(lombok)

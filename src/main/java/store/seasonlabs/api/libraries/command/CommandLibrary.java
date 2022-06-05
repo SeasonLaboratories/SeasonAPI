@@ -1,16 +1,20 @@
 package store.seasonlabs.api.libraries.command;
 
+import lombok.AllArgsConstructor;
 import lombok.val;
 import me.saiintbrisson.bukkit.command.BukkitFrame;
 import me.saiintbrisson.minecraft.command.message.MessageType;
 import org.bukkit.plugin.Plugin;
 import store.seasonlabs.api.SeasonAPI;
 
+@AllArgsConstructor
 public class CommandLibrary {
 
-    public static void provide(Plugin plugin, Object... commands) {
+    private BukkitFrame bukkitFrame;
 
-        val bukkitFrame = new BukkitFrame(plugin);
+    public void provide(Plugin plugin, Object... commands) {
+
+        bukkitFrame = new BukkitFrame(plugin);
 
         bukkitFrame.registerCommands(commands);
 
